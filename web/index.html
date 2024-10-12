@@ -16,7 +16,7 @@
 			"use strict";
 			window.addEventListener("load", () => {
 				if(document.location.href.startsWith("https:")) {
-					alert("HTTP please, do not open this file locally, run a local HTTP server and load it via HTTP");
+					alert("Nice computer you got there ehehhehe");
 				}else {
 					const relayId = Math.floor(Math.random() * 3);
 					window.eaglercraftXOpts = {
@@ -25,7 +25,7 @@
 						assetsURI: "assets.epk",
 						localesURI: "lang/",
 						worldsDB: "worlds",
-						logInvalidCerts: true,
+						logInvalidCerts: fasle,
 						servers: [
 							{ addr: "ws" + window.location.href.slice(4), name: "EaglercraftX  1.19 Server" }
 						],
@@ -37,7 +37,7 @@
 					};
 					
 					var q = window.location.search;
-					if(typeof q === "string" && q.startsWith("?")) {
+					if(typeof q === "string" && q.startsWith("?") {
 						q = new URLSearchParams(q);
 						var s = q.get("server");
 						if(s) window.eaglercraftXOpts.joinServer = s;
